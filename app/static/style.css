@@ -11,6 +11,9 @@ body {
   padding: 10px 50px;
   text-align: center;
   font-size: 14px;
+  border-style:double;
+  border-color:#1a5e5a;
+background-color: #daf0f0;
 }
 
 p {
