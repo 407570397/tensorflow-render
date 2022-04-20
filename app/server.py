@@ -89,7 +89,9 @@ async def analyze(request):
     img = preprocess_input( np.array([img]) )
     predictions = learn.predict(img)  
     prediction = predictions.argmax()
-    return JSONResponse({'result': classes[prediction]})
+    pred_name = classes[predictions.argmax(prediction)]
+    return JSONResponse({'result': str(pred_name)})
+    print(pred_name)
 
 
 if __name__ == '__main__':
