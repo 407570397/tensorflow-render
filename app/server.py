@@ -21,7 +21,7 @@ from starlette.staticfiles import StaticFiles
 model_config_name = 'app/models/model.config'
 model_file_name = 'app/models/best_model.h5'
 
-classes = ['0', '1', '2', '3']
+classes = ['瓶鼻海豚', '粉紅瓶鼻海豚', '花紋海豚', '弗氏海豚', '大西洋黑白海豚']
 path = Path(__file__).parent
 img_size = 224
 app = Starlette()
